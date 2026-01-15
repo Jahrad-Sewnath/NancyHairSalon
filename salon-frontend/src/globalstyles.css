@@ -20,12 +20,8 @@
   --color-border: rgba(42, 25, 25, 0.918);
   --color-danger: rgb(255, 72, 0);
   --color-success: rgb(4, 116, 4);
-}
 
-/* =========================
-   Fonts
-========================= */
-:root {
+  /* Fonts */
   --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
   --font-mono: "JetBrains Mono", monospace;
 }
@@ -45,8 +41,8 @@ html, body {
 
 body {
   margin: 0;
-  background-color: rgb(var(--color-bg));
-  color: rgb(var(--color-text));
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.5;
 }
 
@@ -55,15 +51,15 @@ body {
 ========================= */
 h1, h2, h3, h4 {
   font-weight: 600;
-  color: rgb(var(--color-text));
+  color: var(--color-text);
 }
 
 p {
-  color: rgb(var(--color-muted));
+  color: var(--color-muted);
 }
 
 a {
-  color: rgb(var(--color-primary));
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -87,14 +83,14 @@ select,
 textarea {
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
-  border: 1px solid rgb(var(--color-border));
+  border: 1px solid var(--color-border);
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: rgb(var(--color-primary));
+  border-color: var(--color-primary);
 }
 
 /* =========================
@@ -134,7 +130,7 @@ textarea:focus {
 
 .btn:hover {
  color: #fff;
- background-color: rgb(var(--color-secondary));
+ background-color: var(--color-secondary);
  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
  transform: translateY(-2px);
 }
@@ -145,17 +141,17 @@ textarea:focus {
 }
 
 .btn-primary {
-  background-color: rgb(var(--color-primary));
+  background-color: var(--color-primary);
   color: white;
 }
 
 .btn-secondary {
-  background-color: rgb(var(--color-secondary));
+  background-color: var(--color-secondary);
   color: white;
 }
 
 .btn-danger {
-  background-color: rgb(var(--color-danger));
+  background-color: var(--color-danger);
   color: white;
 }
 
@@ -169,7 +165,7 @@ table {
 
 th, td {
   padding: 0.75rem;
-  border-bottom: 1px solid rgb(var(--color-border));
+  border-bottom: 1px solid var(--color-border);
 }
 
 th {
@@ -187,7 +183,7 @@ th {
 }
 
 .card {
-  background-color: rgb(var(--color-surface));
+  background-color: var(--color-surface);
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);

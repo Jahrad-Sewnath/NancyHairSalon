@@ -1,0 +1,60 @@
+/* Modal Styles */
+/* Modal Overlay */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Container */
+.modal {
+  background: var(--color-surface);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.modal-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Content */
+.modal-content {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.modal-footer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Close Button */
+.modal-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.modal-btn:hover {
+  opacity: 0.9;
+}
