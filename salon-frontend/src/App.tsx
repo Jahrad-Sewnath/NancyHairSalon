@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Modal from "./components/Modal";
 import './components/componentstyles.css'
+import Modal from "./components/Modal";
+import Card from "./components/card";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -18,7 +19,17 @@ function App() {
       >
         This is a test
       </Modal>
+
+
+      <Card title="Hair Product">
+        Stock remaining: 12 units
+      </Card>
+
     </>
+    
+    
+
+
   );
 }
 
