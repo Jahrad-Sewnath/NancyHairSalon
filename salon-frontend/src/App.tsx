@@ -3,12 +3,13 @@ import './components/componentstyles.css'
 import Modal from "./components/Modal";
 import Card from "./components/card";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   return (
-    <>
+    <div className="app-layout">
       <Navbar
         brand="Nancy Hair Studio"
         navItems={[
@@ -20,27 +21,28 @@ function App() {
         ]}
       />
 
+      <div className="main-content">
+        <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
+          Open Modal
+        </button>
 
-      <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
-        Open Modal
-      </button>
+        <Modal
+          isOpen={isModalOpen}
+          title="Testing"
+          onClose={() => setIsModalOpen(false)}
+        >
+          This is a test
+        </Modal>
 
-      <Modal
-        isOpen={isModalOpen}
-        title="Testing"
-        onClose={() => setIsModalOpen(false)}
-      >
-        This is a test
-      </Modal>
+        <Card title="Hair Product">
+          Stock remaining: 12 units
+        </Card>
 
+      </div>
 
-      <Card title="Hair Product">
-        Stock remaining: 12 units
-      </Card>
+      <Footer />
 
-    </>
-    
-    
+    </div>
 
 
   );
